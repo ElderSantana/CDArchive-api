@@ -12,7 +12,7 @@ run `composer global require laravel/installer`
 run `composer install`
 
 ## Running the API
-It's very simple to get the API up and running. First, create the database and add them to the .env file or your can use the database file `cd.sql` in the root folder, 
+It's very simple to get the API up and running. First, create the database and add them to the .env file or your can use the database file `cd_archives.sql` in the root folder, 
 this database was made with Mysql.
 
 ## Runing the Mysql
