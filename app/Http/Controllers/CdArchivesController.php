@@ -17,6 +17,13 @@ class CdArchivesController extends Controller
         return response()->json($cd, 201);
     }
 
+    public function edit(Request $request , $id)
+    {   
+        $cd = CdArchives::findOrFail($id);
+        $cd->update($request->all());
+        return response()->json($cd, 201);
+    }
+
     public function delete($id)
     {   
         $item = CdArchives::findOrFail($id);

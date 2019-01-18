@@ -15,12 +15,14 @@ use Illuminate\Http\Request;
 Route::get('/', function (Request $request) {
     echo "CDArchive - api";
 });
-Route::post('/teste', function (Request $request) {
+Route::post('/teste', function (Request $request) { 
     echo "teste";
 });
 Route::get('/cds', 'CdArchivesController@index');
 Route::post('/cd', 'CdArchivesController@store');
+Route::post('/cd/{id}', 'CdArchivesController@edit');
 Route::delete('cd/{id}', 'CdArchivesController@delete');
+
 Route::get('/genres', 'GenresController@index');
 Route::post('/genre', 'GenresController@store');
 Route::delete('genre/{id}', 'GenresController@delete');
