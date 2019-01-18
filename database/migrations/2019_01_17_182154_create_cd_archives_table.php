@@ -18,7 +18,7 @@ class CreateCdArchivesTable extends Migration
             $table->string('title');
             $table->string('description');
             $table->date('release');
-            $table->string('cover')->nullable();
+            $table->longText('cover')->nullable();
             $table->integer('idGenre');
             $table->timestamps();
         });
